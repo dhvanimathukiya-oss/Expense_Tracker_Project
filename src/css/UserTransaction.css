@@ -1,0 +1,142 @@
+.user-transaction-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* Main Content */
+.user-transaction-main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.user-transaction-main h1 {
+    margin: 0 0 10px;
+    color: #172554;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.user-transaction-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Transaction Card */
+.transaction-table-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.05);
+}
+
+.transaction-table-card h2 {
+    margin: 0 0 22px;
+    color: #172554;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Table */
+.transaction-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.user-transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.user-transaction-table th {
+    padding: 16px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-transaction-table td {
+    padding: 10px 16px;
+    color: #334155;
+    font-size: 13px;
+    border-bottom: 1px solid #e8eaf2;
+}
+
+.user-transaction-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.user-transaction-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Status */
+.transaction-type {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.transaction-type.income {
+    color: #059669;
+    background: #d1fae5;
+}
+
+.transaction-type.expense {
+    color: #e11d48;
+    background: #ffe4e6;
+}
+
+/* Amount */
+.user-transaction-table td:nth-child(3) {
+    font-weight: 600;
+    color: #172554;
+}
+
+/* No Transactions */
+.no-transactions {
+    padding: 30px;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .user-transaction-main {
+        padding: 20px;
+    }
+
+    .transaction-table-card {
+        padding: 18px;
+    }
+
+    .user-transaction-main h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-transaction-main {
+        padding: 15px;
+    }
+
+    .transaction-table-card {
+        padding: 12px;
+    }
+
+    .user-transaction-table th,
+    .user-transaction-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}

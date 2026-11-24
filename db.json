@@ -1,0 +1,210 @@
+{
+  "users": [
+    {
+      "name": "Dhvanii Mathukiya",
+      "email": "dhvanimathukiya@gmail.com",
+      "role": "admin",
+      "password": "1111",
+      "id": "DW6ilaWFdmM"
+    },
+    {
+      "name": "Pankti Tanti",
+      "email": "pankti@gmail.com",
+      "role": "user",
+      "password": "4444",
+      "id": "7C1neI4nZKM"
+    },
+    {
+      "name": "Dhara Pambhar",
+      "email": "dhara12@gmail.com",
+      "role": "user",
+      "password": "1212",
+      "id": "-arkQXvk5XQ"
+    },
+    {
+      "name": "Suchi Pambhar",
+      "email": "suchi111@gmail.com",
+      "role": "user",
+      "password": "111",
+      "id": "yoxCm3BY9nU"
+    },
+    {
+      "name": "Srushti Dholariya",
+      "email": "srushh@gmail.com",
+      "role": "user",
+      "password": "0000",
+      "id": "OgrgNo8RVIM"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "2",
+      "userId": "7C1neI4nZKM",
+      "title": "salary",
+      "amount": "22000",
+      "type": "income"
+    },
+    {
+      "id": "3",
+      "userId": "7C1neI4nZKM",
+      "title": "from papa",
+      "amount": "12000",
+      "type": "income"
+    },
+    {
+      "id": "4",
+      "userId": "7C1neI4nZKM",
+      "title": "buy a mobile",
+      "amount": "15000",
+      "type": "expense"
+    },
+    {
+      "id": "5",
+      "userId": "7C1neI4nZKM",
+      "title": "jewelery",
+      "amount": "1800",
+      "type": "expense"
+    },
+    {
+      "id": "6",
+      "userId": "-arkQXvk5XQ",
+      "title": "food",
+      "amount": "2400",
+      "type": "expense"
+    },
+    {
+      "id": "7",
+      "userId": "-arkQXvk5XQ",
+      "title": "education",
+      "amount": "7000",
+      "type": "expense"
+    },
+    {
+      "id": "8",
+      "userId": "-arkQXvk5XQ",
+      "title": "salary",
+      "amount": "32000",
+      "type": "income"
+    },
+    {
+      "id": "9",
+      "userId": "-arkQXvk5XQ",
+      "title": "from Pankti",
+      "amount": "2900",
+      "type": "income"
+    },
+    {
+      "id": "10",
+      "userId": "-arkQXvk5XQ",
+      "title": "silver",
+      "amount": "12000",
+      "type": "expense"
+    },
+    {
+      "id": "11",
+      "userId": "-arkQXvk5XQ",
+      "title": "coffee",
+      "amount": "450",
+      "type": "expense"
+    },
+    {
+      "id": "12",
+      "userId": "-arkQXvk5XQ",
+      "title": "books",
+      "amount": "850",
+      "type": "expense"
+    },
+    {
+      "id": "13",
+      "userId": "yoxCm3BY9nU",
+      "title": "food",
+      "amount": "500",
+      "type": "expense"
+    },
+    {
+      "id": "14",
+      "userId": "yoxCm3BY9nU",
+      "title": "from shopkeeper",
+      "amount": "1100",
+      "type": "income"
+    },
+    {
+      "userId": "7C1neI4nZKM",
+      "type": "income",
+      "title": "From Mumma",
+      "amount": "2000",
+      "id": "RUkufPI8Abc"
+    },
+    {
+      "userId": "7C1neI4nZKM",
+      "type": "expense",
+      "title": "buy a purse",
+      "amount": "1200",
+      "id": "pT8Yrajb9n0"
+    },
+    {
+      "userId": "7C1neI4nZKM",
+      "type": "income",
+      "title": "from dhvani",
+      "amount": "1200",
+      "id": "4FK3T5U8bT0"
+    },
+    {
+      "userId": "7C1neI4nZKM",
+      "type": "income",
+      "title": "scholarship",
+      "amount": "12000",
+      "id": "Gh9zLdRiLDE"
+    },
+    {
+      "userId": "yoxCm3BY9nU",
+      "type": "income",
+      "title": "scholarship",
+      "amount": "15000",
+      "id": "IUNcH7dv2qg"
+    },
+    {
+      "userId": "yoxCm3BY9nU",
+      "type": "expense",
+      "title": "Fees",
+      "amount": "8000",
+      "id": "1JoHZdmzlyI"
+    },
+    {
+      "userId": "yoxCm3BY9nU",
+      "type": "expense",
+      "title": "Maintenance",
+      "amount": "3200",
+      "id": "cr5GwDo42Mw"
+    },
+    {
+      "userId": "yoxCm3BY9nU",
+      "type": "income",
+      "title": "from papa",
+      "amount": "5000",
+      "id": "x0LlzUSlznQ"
+    },
+    {
+      "userId": "OgrgNo8RVIM",
+      "type": "income",
+      "title": "Salary",
+      "amount": "18000",
+      "id": "sRqHpWAh9f0"
+    },
+    {
+      "userId": "OgrgNo8RVIM",
+      "type": "expense",
+      "title": "Food",
+      "amount": "3400",
+      "id": "kZGLkR6nJR8"
+    },
+    {
+      "userId": "OgrgNo8RVIM",
+      "type": "expense",
+      "title": "Education",
+      "amount": "6000",
+      "id": "3Y4BpEUIwpc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

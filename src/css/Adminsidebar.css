@@ -1,0 +1,129 @@
+.admin-sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #172554;
+    color: white;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.admin-sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px 30px;
+    border-bottom: 1px solid #334155;
+}
+
+.admin-logo-icon {
+    width: 42px;
+    height: 42px;
+    background: #6366f1;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.admin-sidebar-logo h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.admin-sidebar-logo p {
+    color: #a5b4fc;
+    margin: 5px 0 0;
+    font-size: 12px;
+}
+
+.admin-sidebar-menu {
+    flex: 1;
+    padding-top: 28px;
+}
+
+.admin-menu-title {
+    color: #94a3b8;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin: 0 10px 16px;
+}
+
+.admin-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 14px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.admin-menu-link:hover {
+    background: #263765;
+    color: white;
+}
+
+.admin-menu-link.active {
+    background: #6366f1;
+    color: white;
+}
+
+.admin-menu-icon {
+    font-size: 18px;
+}
+
+.admin-sidebar-bottom {
+    border-top: 1px solid #334155;
+    padding-top: 20px;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.admin-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #c7d2fe;
+    color: #312e81;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.admin-profile h4 {
+    margin: 0;
+    font-size: 13px;
+}
+
+.admin-profile p {
+    margin: 5px 0 0;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.admin-logout-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #475569;
+    border-radius: 9px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}
+
+.admin-logout-btn:hover {
+    background: #dc2626;
+    border-color: #dc2626;
+}

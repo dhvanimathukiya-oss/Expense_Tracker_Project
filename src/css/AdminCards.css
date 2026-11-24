@@ -1,0 +1,117 @@
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.admin-card {
+    padding: 23px;
+    border-radius: 18px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.04);
+    transition: 0.25s ease;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(30, 41, 59, 0.1);
+}
+
+.admin-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-card-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 14px;
+    font-size: 25px;
+}
+
+.admin-card-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.65;
+}
+
+.admin-card-title {
+    margin: 0 0 10px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.admin-card-amount {
+    margin: 0;
+    color: #172554;
+    font-size: clamp(20px, 2vw, 27px);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.admin-card-description {
+    margin: 12px 0 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.admin-card.users {
+    color: #2563eb;
+    background: linear-gradient(135deg, #eff6ff, #ffffff);
+    border-color: #dbeafe;
+}
+
+.admin-card.users .admin-card-icon {
+    background: #dbeafe;
+}
+
+.admin-card.income {
+    color: #059669;
+    background: linear-gradient(135deg, #ecfdf5, #ffffff);
+    border-color: #d1fae5;
+}
+
+.admin-card.income .admin-card-icon {
+    background: #d1fae5;
+}
+
+.admin-card.expenses {
+    color: #e11d48;
+    background: linear-gradient(135deg, #fff1f2, #ffffff);
+    border-color: #ffe4e6;
+}
+
+.admin-card.expenses .admin-card-icon {
+    background: #ffe4e6;
+}
+
+.admin-card.balance {
+    color: #6366f1;
+    background: linear-gradient(135deg, #eef2ff, #ffffff);
+    border-color: #e0e7ff;
+}
+
+.admin-card.balance .admin-card-icon {
+    background: #e0e7ff;
+}
+
+@media (max-width: 1100px) {
+    .admin-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .admin-cards {
+        grid-template-columns: 1fr;
+    }
+}

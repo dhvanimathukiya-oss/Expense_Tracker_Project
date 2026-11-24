@@ -1,0 +1,126 @@
+.add-transaction-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+.add-transaction-main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.add-transaction-main h1 {
+    margin: 0 0 10px;
+    color: #172554;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.add-transaction-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+.add-transaction-card {
+    max-width: 550px;
+    margin-top: 30px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.05);
+}
+
+.add-transaction-card h2 {
+    margin: 0 0 25px;
+    color: #172554;
+    font-size: 21px;
+}
+
+.transaction-form-group {
+    margin-bottom: 22px;
+}
+
+.transaction-form-group label {
+    display: block;
+    margin-bottom: 9px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transaction-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    background: #ffffff;
+    color: #334155;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.transaction-input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.transaction-submit-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.transaction-submit-btn:hover {
+    background: #1d4ed8;
+}
+
+.transaction-submit-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+.transaction-message {
+    margin: 0 0 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.transaction-message.success {
+    color: #059669;
+}
+
+.transaction-message.error {
+    color: #e11d48;
+}
+
+@media (max-width: 768px) {
+    .add-transaction-main {
+        padding: 20px;
+    }
+
+    .add-transaction-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-transaction-main h1 {
+        font-size: 23px;
+    }
+
+    .add-transaction-card {
+        padding: 18px;
+    }
+}

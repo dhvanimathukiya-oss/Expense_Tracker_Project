@@ -1,0 +1,193 @@
+.all-transaction-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* Main Content */
+.all-transaction-main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.all-transaction-main h1 {
+    margin: 0 0 10px;
+    color: #172554;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.all-transaction-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* Transaction Card */
+.all-transaction-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.05);
+}
+
+/* Card Header */
+.all-transaction-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.all-transaction-header h2 {
+    margin: 0;
+    color: #172554;
+    font-size: 20px;
+}
+
+.transaction-count {
+    padding: 8px 13px;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Table */
+.all-transaction-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.all-transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.all-transaction-table th {
+    padding: 16px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.all-transaction-table td {
+    padding: 16px;
+    color: #334155;
+    font-size: 14px;
+    border-bottom: 1px solid #e8eaf2;
+}
+
+.all-transaction-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.all-transaction-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Amount */
+.all-amount {
+    font-weight: 700;
+}
+
+.all-amount.income {
+    color: #059669;
+}
+
+.all-amount.expense {
+    color: #e11d48;
+}
+
+/* Status */
+.all-status {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.all-status.income {
+    color: #059669;
+    background: #d1fae5;
+}
+
+.all-status.expense {
+    color: #e11d48;
+    background: #ffe4e6;
+}
+
+/* No Transactions */
+.no-all-transactions {
+    padding: 30px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+/* Delete Button */
+.delete-transaction-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #ffe4e6;
+    color: #e11d48;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.delete-transaction-btn:hover {
+    background: #e11d48;
+    color: #ffffff;
+}
+
+.delete-transaction-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .all-transaction-main {
+        padding: 20px;
+    }
+
+    .all-transaction-card {
+        padding: 18px;
+    }
+
+    .all-transaction-main h1 {
+        font-size: 23px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .all-transaction-main {
+        padding: 15px;
+    }
+
+    .all-transaction-card {
+        padding: 12px;
+    }
+
+    .all-transaction-table th,
+    .all-transaction-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+}

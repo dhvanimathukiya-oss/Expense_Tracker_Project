@@ -1,0 +1,156 @@
+.all-user-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* Main Content */
+.all-user-main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.all-user-main h1 {
+    margin: 0 0 10px;
+    color: #172554;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.all-user-subtitle {
+    margin: 0;
+    color: #64748b;
+    font-size: 15px;
+}
+
+/* User Card */
+.all-user-card {
+    margin-top: 30px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8eaf2;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(30, 41, 59, 0.05);
+}
+
+/* Header */
+.all-user-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.all-user-header h2 {
+    margin: 0;
+    color: #172554;
+    font-size: 20px;
+}
+
+.user-count {
+    padding: 8px 13px;
+    border-radius: 8px;
+    background: #eef2ff;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Table */
+.all-user-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.all-user-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.all-user-table th {
+    padding: 16px;
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.all-user-table td {
+    padding: 16px;
+    color: #334155;
+    font-size: 14px;
+    border-bottom: 1px solid #e8eaf2;
+}
+
+.all-user-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.all-user-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Role */
+.user-role {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.user-role.admin {
+    color: #4f46e5;
+    background: #eef2ff;
+}
+
+.user-role.user {
+    color: #059669;
+    background: #d1fae5;
+}
+
+/* No Users */
+.no-users {
+    padding: 30px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .all-user-main {
+        padding: 20px;
+    }
+
+    .all-user-card {
+        padding: 18px;
+    }
+
+    .all-user-main h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .all-user-main {
+        padding: 15px;
+    }
+
+    .all-user-card {
+        padding: 12px;
+    }
+
+    .all-user-table th,
+    .all-user-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+}
