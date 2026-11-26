@@ -204,6 +204,13 @@
       "title": "Education",
       "amount": "6000",
       "id": "3Y4BpEUIwpc"
+    },
+    {
+      "userId": "7C1neI4nZKM",
+      "type": "income",
+      "title": "From het",
+      "amount": "800",
+      "id": "Rj6Cg0ncxcY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

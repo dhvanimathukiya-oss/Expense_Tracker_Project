@@ -1,19 +1,16 @@
+
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import "../../css/UserSidebar.css";
 
 const UserSidebar=() => {
+
     const navigate=useNavigate();
-    const { user, setUser }=useAuth();
+    const { user, logout }=useAuth();
 
     const handleLogout=() => {
-        localStorage.removeItem("loginuser");
-
-        if (setUser) {
-            setUser(null);
-        }
-
+        logout();
         navigate("/", { replace: true });
     };
 
@@ -31,7 +28,7 @@ const UserSidebar=() => {
                 <div className="admin-logo-icon">₹</div>
 
                 <div>
-                    <h2>{user.name}</h2>
+                    <h2>{user?.name}</h2>
                     <p>User Panel</p>
                 </div>
             </div>
@@ -57,6 +54,7 @@ const UserSidebar=() => {
             </div>
 
             <div className="admin-sidebar-bottom">
+
                 <div className="admin-profile">
                     <div className="admin-avatar">U</div>
 
@@ -73,6 +71,7 @@ const UserSidebar=() => {
                 >
                     <span>↪</span> Logout
                 </button>
+
             </div>
 
         </aside>
